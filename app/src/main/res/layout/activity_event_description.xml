@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventDescription">
+    <!--table about one event-->
+    <LinearLayout
+        android:id="@+id/mainTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--button back-->
+        <LinearLayout
+            android:id="@+id/lineBack"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:orientation="horizontal">
+            <!--image back-->
+            <TextView
+                android:id="@+id/iconBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:text = "@string/icon_back"/>
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:text="@string/app_name" />
+        </LinearLayout>
+
+        <!--main description-->
+        <LinearLayout
+            android:id="@+id/ltDescription"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <!--afisha-->
+            <ImageView
+                android:contentDescription="@string/description"
+                android:id="@+id/imgAfisha"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <!--description-->
+            <LinearLayout
+                android:id="@+id/ltRightDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:orientation="vertical">
+                <!--Name-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:layout_weight="0.1">
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+                <!--Date and Time-->
+                <LinearLayout
+                    android:id="@+id/ltDateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="top"
+
+                    android:orientation="horizontal">
+                    <!--date-->
+                    <TextView
+                        android:id="@+id/txtDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                     <!--time-->
+                    <TextView
+                        android:id="@+id/txtTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!--Place and price-->
+                <LinearLayout
+                    android:id="@+id/ltPlacePrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+                    <!--place-->
+                    <TextView
+                        android:id="@+id/txtPlace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <!--address-->
+                    <TextView
+                        android:id="@+id/txtAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <!--price-->
+                    <TextView
+                        android:id="@+id/txtPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--button buy-->
+        <LinearLayout
+            android:id="@+id/ltBuy"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="vertical">
+            <!--button buy-->
+            <Button
+                android:id="@+id/btnBuy"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="@string/app_name" />
+
+
+        </LinearLayout>
+
+        <!--insets-->
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tiDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/description" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tiPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/place" />
+
+        </android.support.design.widget.TabLayout>
+        <!--information-->
+        <LinearLayout
+            android:id="@+id/ltText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

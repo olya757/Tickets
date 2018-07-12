@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TicketsApp</string>
+    <string name="icon_back">&lt;</string>
+    <string name="description">Описание</string>
+    <string name="place">Место</string>
+    <string name="item1">textforitem1</string>
+    <string name="item2">textforitem2</string>
+    <string name="item3">textforItem3</string>
+    <string name="item4">textforItem4</string>
+</resources>
